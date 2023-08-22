@@ -24,3 +24,11 @@ yq_df['year'] = yq_df['date'].dt.year<br/>
 yq_df['month'] = yq_df['date'].dt.month<br/>
 yq_df['day'] = yq_df['date'].dt.day<br/>
 print(yq_df)
+
+# 日期加减多少天 
+import datetime<br/> 
+previous_date = cur_dt - datetime.timedelta(1)<br/>
+### output: Timestamp('2021-02-28 00:00:00')
+next_date = cur_dt + datetime.timedelta(1)<br/>
+### output: Timestamp('2021-03-02 00:00:00')
+
