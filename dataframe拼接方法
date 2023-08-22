@@ -3,3 +3,10 @@
 
 concat(objs, axis=0, join='outer', join_axes=None, ignore_index=False,  
        keys=None, levels=None, names=None, verify_integrity=False, copy=True): 
+
+
+
+# DataFrame.join：主要用于索引上的合并
+join(self, other, on=None, how='left', lsuffix='', rsuffix='',sort=False): 
+
+eg. df = df1.join( df2, how='left' )
